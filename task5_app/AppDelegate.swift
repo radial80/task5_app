@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  task5_app
 //
-//  Created by Kasım Sağır on 2.09.2023.
+//  Created by Recep Uyduran on 2.09.2023.
 //
 
 import UIKit

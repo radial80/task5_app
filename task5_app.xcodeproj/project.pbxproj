@@ -13,6 +13,8 @@
 		4824F3042AA2949C00F41277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4824F3022AA2949C00F41277 /* Main.storyboard */; };
 		4824F3062AA2949D00F41277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4824F3052AA2949D00F41277 /* Assets.xcassets */; };
 		4824F3092AA2949D00F41277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4824F3072AA2949D00F41277 /* LaunchScreen.storyboard */; };
+		4824F31B2AA532EE00F41277 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4824F3192AA532EE00F41277 /* MusicTableViewCell.swift */; };
+		4824F31C2AA532EE00F41277 /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4824F31A2AA532EE00F41277 /* MusicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4824F3052AA2949D00F41277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4824F3082AA2949D00F41277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4824F30A2AA2949D00F41277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4824F3192AA532EE00F41277 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		4824F31A2AA532EE00F41277 /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				4824F3052AA2949D00F41277 /* Assets.xcassets */,
 				4824F3072AA2949D00F41277 /* LaunchScreen.storyboard */,
 				4824F30A2AA2949D00F41277 /* Info.plist */,
+				4824F3192AA532EE00F41277 /* MusicTableViewCell.swift */,
+				4824F31A2AA532EE00F41277 /* MusicTableViewCell.xib */,
 			);
 			path = task5_app;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				4824F3092AA2949D00F41277 /* LaunchScreen.storyboard in Resources */,
 				4824F3062AA2949D00F41277 /* Assets.xcassets in Resources */,
 				4824F3042AA2949C00F41277 /* Main.storyboard in Resources */,
+				4824F31C2AA532EE00F41277 /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				4824F3012AA2949C00F41277 /* ViewController.swift in Sources */,
 				4824F2FD2AA2949C00F41277 /* AppDelegate.swift in Sources */,
 				4824F2FF2AA2949C00F41277 /* SceneDelegate.swift in Sources */,
+				4824F31B2AA532EE00F41277 /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YH9484UXC5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = task5_app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -294,6 +303,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YH9484UXC5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = task5_app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,6 +332,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

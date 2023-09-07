@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="task5_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n9S-wG-Ng8">
+                                <rect key="frame" x="36.666666666666657" y="89" width="320" height="32"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="mYH-Sg-S5Q"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Sounds"/>
+                                    <segment title="Playlist"/>
+                                    <segment title="Songs"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" systemColor="systemGrayColor"/>
+                                <connections>
+                                    <action selector="segmentedControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="cWo-jj-Xs0"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-r0-wuI">
+                                <rect key="frame" x="71.666666666666686" y="60" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="W6O-ma-xDv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY SOUNDS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef9-P7-U5x">
+                                <rect key="frame" x="20" y="135" width="353" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="v8A-8M-8Gg">
+                                <rect key="frame" x="16" y="167" width="361" height="651"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v8A-8M-8Gg" firstAttribute="top" secondItem="ef9-P7-U5x" secondAttribute="bottom" constant="8" symbolic="YES" id="3BN-HU-zun"/>
+                            <constraint firstItem="n9S-wG-Ng8" firstAttribute="top" secondItem="ImA-r0-wuI" secondAttribute="bottom" constant="8" symbolic="YES" id="5p8-NY-957"/>
+                            <constraint firstItem="v8A-8M-8Gg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="61j-VT-gwN"/>
+                            <constraint firstItem="n9S-wG-Ng8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="LPR-yD-bBw"/>
+                            <constraint firstItem="n9S-wG-Ng8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LXK-Zy-bAC"/>
+                            <constraint firstItem="v8A-8M-8Gg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OAh-Fr-9gV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v8A-8M-8Gg" secondAttribute="trailing" constant="16" id="Raw-i3-QTs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ef9-P7-U5x" secondAttribute="trailing" constant="20" id="TXW-eH-9Nq"/>
+                            <constraint firstItem="v8A-8M-8Gg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gFw-lO-vB0"/>
+                            <constraint firstItem="ImA-r0-wuI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="maf-m7-BE5"/>
+                            <constraint firstItem="ef9-P7-U5x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xkP-T0-0BE"/>
+                            <constraint firstItem="ef9-P7-U5x" firstAttribute="top" secondItem="n9S-wG-Ng8" secondAttribute="bottom" constant="15" id="yUB-0B-Iqr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choosenMusicLabel" destination="ImA-r0-wuI" id="yyt-uB-ZBE"/>
+                        <outlet property="mySongLabel" destination="ef9-P7-U5x" id="0WA-Sa-nJO"/>
+                        <outlet property="tableView" destination="v8A-8M-8Gg" id="q8P-1C-y00"/>
+                        <outlet property="topSegmentedControl" destination="n9S-wG-Ng8" id="fI3-nl-fL7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="0.76335877862595414" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
